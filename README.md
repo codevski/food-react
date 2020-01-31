@@ -56,7 +56,9 @@ Before you begin; install the dependencies by running `npm install`.
 
 Once the dependencies have been installed you'll have a few commands available:
 
-- `npm start`  : Will start a production ready backend.
+- `npm start`  : Will start the React/Express services
+  - React port: 3000
+  - Express port: 8080
 - To run server tests it requires server to be running
   - `npm run start:server` : To start the server and in another instance run:
   - `npm run test:server` : To start GraphQL tests
