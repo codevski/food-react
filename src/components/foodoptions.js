@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import _ from "lodash";
 import { Checkbox } from "antd";
 import { useQuery } from "@apollo/react-hooks";
@@ -13,17 +13,8 @@ const FOOD_OPTIONS = gql`
   }
 `;
 
-function FoodOptions({totalPrice, setTotalPrice}) {
+function FoodOptions({ totalPrice, setTotalPrice }) {
   const { loading, error, data } = useQuery(FOOD_OPTIONS);
-  const [ checkedValues, setCheckedValues ] = useState([])
-
-  const isDisabled = (id) => {
-    console.log(id)
-    console.log(checkedValues)
-    return(
-      checkedValues.length > 1 && checkedValues.indexOf(id) === -1
-    );
-  }
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
@@ -33,16 +24,11 @@ function FoodOptions({totalPrice, setTotalPrice}) {
         return (
           <Checkbox
             onChange={function(e) {
-              setCheckedValues([index])
-              if (e.target.checked) {
-                setTotalPrice(totalPrice + x.price);
-              } else {
-                setTotalPrice(totalPrice - x.price);
-              }
+              e.target.checked
+                ? setTotalPrice(totalPrice + x.price)
+                : setTotalPrice(totalPrice - x.price);
             }}
             key={x.name}
-            value={index}
-            disabled={isDisabled(index)}
           >
             {x.name}
           </Checkbox>

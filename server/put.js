@@ -11,8 +11,7 @@ module.exports = {
       price: args.price,
       qty: args.qty
     }
-    if (!args.qty || args.qty < 2) {
-      // return console.error("QTY Must be greater than 1");
+    if (!args.qty || args.qty < 1) {
       throw new UserInputError('QTY Must be greater than 1', {
         invalidArgs: Object.keys(args),
       });

@@ -22,7 +22,7 @@ const resolvers = {
   },
 
   Mutation: {
-    AddCart: (parent, args) => { put.Cart(args); console.log(args)}
+    AddCart: (parent, args) => { put.Cart(args) }
   },
 }
 

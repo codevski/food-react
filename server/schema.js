@@ -2,7 +2,6 @@ const { gql } = require("apollo-server");
 
 // Construct a schema, using GraphQL schema language
 const typeDefs = gql`
-  # union Result = Food | Drink
 
   type Product {
     id: ID

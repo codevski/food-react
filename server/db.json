@@ -1,1 +1,98 @@
-{"products":{"drinks":[{"id":"1","name":"Coffee","price":3,"description":"simple coffee","image":"coffee.png","type":"Drink"},{"id":"67d1c600-4247-11ea-bf76-136he5e80992","name":"Tea","price":3.5,"description":"simple tea","image":"tea.png","type":"Drink"},{"id":"97d1c600-4247-11ea-bf76-132be5e80984","name":"Shake","description":"simple burger","price":5.5,"image":"shake.png","type":"Drink"}],"food":[{"id":"he677230-4346-11ea-a132-cd7ec5c47313","name":"Salad","price":14,"description":"simple salad","image":"salad.png","type":"Food"}]},"drinkOptions":{"sizes":[{"id":"646edf10-434a-11ea-8386-f34e5a92b20c","size":"Regular","price":0},{"id":"0b844480-434a-11ea-b78d-952bdb9d5f51","size":"Large","price":1.5}],"milk":[{"id":"ee677230-4346-11ea-a132-cd7ec5c97313","name":"skim","price":0},{"id":"672d5940-433e-11ea-96e7-59c58b4c4fc5","name":"Full","price":0},{"id":"261090a0-433c-11ea-8885-775533d6d652","name":"Almond","price":1}]},"foodOptions":{"extra":[{"id":"58e5fd90-434a-11ea-a107-eb2ee252ad8a","name":"Lettuce","price":0.5},{"id":"c42295b0-4335-11ea-ba5e-bb699432fc19","name":"Tomato","price":0.5},{"id":"jd677230-8376-11ea-a192-cd7ec5c48283","name":"Avocado","price":2}]},"cart":[{"id":"b5370240-4266-11ea-8a6f-f32e4f41b312","item":"Shake","price":5.5,"qty":1},{"id":"ef358f40-4354-11ea-9bfb-25b8c8036c9f","item":"Coffee","price":5,"qty":2},{"id":"0f13d2e0-4355-11ea-ab09-63903a3d8466","item":"Coffee","price":5,"qty":2},{"id":"6f7a11d0-435a-11ea-813c-cb8e46757839","item":"Salad","price":49.5,"qty":3}]}
+{
+  "products": {
+    "drinks": [
+      {
+        "id": "1",
+        "name": "Coffee",
+        "price": 3,
+        "description": "simple coffee",
+        "image": "coffee.png",
+        "type": "Drink"
+      },
+      {
+        "id": "67d1c600-4247-11ea-bf76-136he5e80992",
+        "name": "Tea",
+        "price": 3.5,
+        "description": "simple tea",
+        "image": "tea.png",
+        "type": "Drink"
+      },
+      {
+        "id": "97d1c600-4247-11ea-bf76-132be5e80984",
+        "name": "Shake",
+        "description": "simple burger",
+        "price": 5.5,
+        "image": "shake.png",
+        "type": "Drink"
+      }
+    ],
+    "food": [
+      {
+        "id": "he677230-4346-11ea-a132-cd7ec5c47313",
+        "name": "Salad",
+        "price": 14,
+        "description": "simple salad",
+        "image": "salad.png",
+        "type": "Food"
+      }
+    ]
+  },
+  "drinkOptions": {
+    "sizes": [
+      {
+        "id": "646edf10-434a-11ea-8386-f34e5a92b20c",
+        "size": "Regular",
+        "price": 0
+      },
+      {
+        "id": "0b844480-434a-11ea-b78d-952bdb9d5f51",
+        "size": "Large",
+        "price": 1.5
+      }
+    ],
+    "milk": [
+      {
+        "id": "ee677230-4346-11ea-a132-cd7ec5c97313",
+        "name": "skim",
+        "price": 0
+      },
+      {
+        "id": "672d5940-433e-11ea-96e7-59c58b4c4fc5",
+        "name": "Full",
+        "price": 0
+      },
+      {
+        "id": "261090a0-433c-11ea-8885-775533d6d652",
+        "name": "Almond",
+        "price": 1
+      }
+    ]
+  },
+  "foodOptions": {
+    "extra": [
+      {
+        "id": "58e5fd90-434a-11ea-a107-eb2ee252ad8a",
+        "name": "Lettuce",
+        "price": 0.5
+      },
+      {
+        "id": "c42295b0-4335-11ea-ba5e-bb699432fc19",
+        "name": "Tomato",
+        "price": 0.5
+      },
+      {
+        "id": "jd677230-8376-11ea-a192-cd7ec5c48283",
+        "name": "Avocado",
+        "price": 2
+      }
+    ]
+  },
+  "cart": [
+    {
+      "id": "b5370240-4266-11ea-8a6f-f32e4f41b312",
+      "item": "Shake",
+      "price": 5.5,
+      "qty": 1
+    }
+  ]
+}
